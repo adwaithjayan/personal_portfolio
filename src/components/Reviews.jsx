@@ -52,7 +52,7 @@ const Reviews = () => {
               },0).toFixed(1)}</span>
               <div className="flex items-center gap-x-2 text-2xl text-yellow-500">
                 {review.stars.map((star,j)=>
-                <span key={j}>{star ===1 ? starIcons[0]:starIcons[1]}</span>
+                <span key={j}>{star ===1 ? starIcons[0].icon:starIcons[1].icon}</span>
               )}
               </div>
             </div>
@@ -63,11 +63,11 @@ const Reviews = () => {
           <button className={`${index ===0 ? "opacity-30 pointer-events-none":"opacity-100 pointer-events-auto"} hover:scale-150 transition-all`} onClick={()=>{
             setDirection(true);
             setIndex(index-1);
-          }}>{arrowIcons[0]}</button>
+          }}>{arrowIcons[0].icon}</button>
           <button  className={`${index ===reviewsData.length-1 ? "opacity-30 pointer-events-none":"opacity-100 pointer-events-auto"} hover:scale-150 transition-all`}   onClick={()=>{
             setDirection(false);
             setIndex(index+1);
-          }}>{arrowIcons[1]}</button>
+          }}>{arrowIcons[1].icon}</button>
         </div>
       </div>
     </div>

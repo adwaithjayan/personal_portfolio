@@ -48,8 +48,8 @@ const Hero = () => {
                 <p className="text-lg dark:text-gray-200 transition-colors tracking-wider text-gray-700">I like animations 😊</p> 
             </motion.div>
             <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{delay:0.5}} className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
-               {heroIcons.map((icon, i)=> (<a href="#"  key={i} className="hover:bg-red-400 hover:text-white transition-colors rounded-lg">
-                    {icon}
+               {heroIcons.map((icons)=> (<a href="#"  key={icons.id} className="hover:bg-red-400 hover:text-white transition-colors rounded-lg">
+                    {icons.icon}
                 </a>))}
             </motion.div>
             <motion.a href="#" initial={{opacity:0,x:-30}} animate={{opacity:1,x:0}} transition={{delay:0.5}} className="mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider mx-auto text-white hover:bg-red-500 transition-colors " onMouseEnter={()=>setButtonHover(true)} onMouseLeave={()=>setButtonHover(false)}>Talk to Me</motion.a>

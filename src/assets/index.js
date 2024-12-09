@@ -5,14 +5,29 @@ import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
 import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
 
-export const heroIcons = [
-  <InstagramLineIcon />,
-  <FacebookCircleLineIcon />,
-  <DribbbleLineIcon />,
-  <YoutubeLineIcon />,
-  <GithubLineIcon />,
-];
 
+export const heroIcons = [
+  {
+    id: 1,
+    icon: <InstagramLineIcon />,
+  },
+  {
+    id: 2,
+    icon: <FacebookCircleLineIcon />,
+  },
+  {
+    id: 3,
+    icon: <DribbbleLineIcon />,
+  },
+  {
+    id: 4,
+    icon: <YoutubeLineIcon />,
+  },
+  {
+    id: 5,
+    icon: <GithubLineIcon />,
+  },
+];
 // AboutMe icons
 import GithubFillIcon from "remixicon-react/GithubFillIcon";
 import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
@@ -391,8 +406,11 @@ import StarHalfLineIcon from "remixicon-react/StarHalfLineIcon";
 import ArrowLeftSLineIcon from "remixicon-react/ArrowLeftSLineIcon";
 import ArrowRightSLineIcon from "remixicon-react/ArrowRightSLineIcon";
 
-export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />];
-export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />];
+export const starIcons = [{id:1,icon:<StarFillIcon />}, {id:2,icon:<StarHalfLineIcon />}];
+export const arrowIcons = [
+  { id: 1, icon: <ArrowLeftSLineIcon /> },
+  { id: 2, icon: <ArrowRightSLineIcon /> },
+];
 
 export const reviewsData = [
   {
